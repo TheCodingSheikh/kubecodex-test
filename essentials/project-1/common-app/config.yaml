@@ -14,5 +14,11 @@ ignoreDifferences:
     namespace: default
     jsonPointers:
       - /spec/replicas
+  - group: '*'
+    kind: Service
+    name: dns-primary
+    namespace: tailscale
+    jsonPointers:
+    - /spec/externalName
 labels: {} # Additional Application labels
 annotations: {} # Additional Application annotations
