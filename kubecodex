@@ -164,6 +164,12 @@ spec:
         {{- range .additionalSyncOptions }}
           - {{ . }}
         {{- end }}
+      {{- if .ignoreDifferences }}
+      ignoreDifferences:
+      {{- range .ignoreDifferences }}
+        - {{ . }}
+      {{- end }}
+      {{- end }}
   syncPolicy: {}
 
 EOF
