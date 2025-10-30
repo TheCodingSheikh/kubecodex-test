@@ -78,5 +78,5 @@ spec:
         {{- end }}
       {{- if .ignoreDifferences }}
       ignoreDifferences:
-      {{ toYaml .ignoreDifferences }}
+    {{ toYaml .ignoreDifferences | indent 4 }}
       {{- end }}
