@@ -1,4 +1,4 @@
-repoURL: https://github.com/TheCodingSheikh/kubecodex.git
+repoURL: https://github.com/TheCodingSheikh/kubecodex-test.git
 namespace: argocd
 projects:
   - name: project-1

@@ -22,7 +22,7 @@ spec:
       project: default
       source:
         path: cluster-resources/{{name}}
-        repoURL: https://github.com/TheCodingSheikh/kubecodex.git
+        repoURL: https://github.com/TheCodingSheikh/kubecodex-test.git
       syncPolicy:
         automated:
           allowEmpty: true
