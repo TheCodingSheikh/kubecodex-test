@@ -78,7 +78,5 @@ spec:
         {{- end }}
       {{- if .ignoreDifferences }}
       ignoreDifferences:
-      {{- range .ignoreDifferences }}
-      - {{ . }}
-      {{- end }}
+      {{ toYaml .ignoreDifferences }}
       {{- end }}
