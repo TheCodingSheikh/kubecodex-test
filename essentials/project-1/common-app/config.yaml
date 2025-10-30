@@ -8,11 +8,11 @@ autoSync: true # If empty or not set, the Application will be auto-synced
 createNamespace: true # If empty or not set, the Application destination namespace will be created if it doesn't exist
 additionalSyncOptions: [] # Additional sync options to be added to the Application syncOptions
 ignoreDifferences:
-  - group: '*'
-    kind: Service
-    name: dns-primary
-    namespace: tailscale
+  - group: apps
+    kind: Deployment
+    name: guestbook
+    namespace: default
     jsonPointers:
-    - /spec/externalName
+      - /spec/replicas
 labels: {} # Additional Application labels
 annotations: {} # Additional Application annotations
